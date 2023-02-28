@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/TextRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Radio"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextRadio"
+        android:layout_margin="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/black"
+        >
+
+            <LinearLayout
+                android:id="@+id/Layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Music 1"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/apple"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="35mm"
+
+                    android:src="@drawable/ic_baseline_calendar_month_24" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="The new music that matters"
+                android:textColor="#DDDDDD"
+                android:textSize="13dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/Layout3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/xabi_resize"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare"
+
+                    />
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/CardDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="130dp"
+                        android:background="#F9DBBB"
+                        app:cardCornerRadius="15dp"
+                        >
+                        <RelativeLayout
+                            android:id="@+id/relativeDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#F9DBBB"
+                            style="@style/RoundedSquare"
+                            >
+                            <TextView
+                                android:id="@+id/live"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="7dp"
+                                android:text="Live In 12.00-14.00"
+                                android:textSize="9dp"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/inter_medium"
+                                />
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_below="@+id/live"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="Today's Music"
+                                android:textSize="12dp"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/inter_bold"
+                                />
+                            <TextView
+                                android:id="@+id/descrpition"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/title"
+                                android:textColor="@color/black"
+                                android:text="All the song you know and love from \nall your favourite artist "
+                                android:textSize="9dp"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/inter_medium"
+                                />
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/TextBroadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:layout_below="@id/Card1"
+        android:text="Local Broadcasters"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/bannercarousel"
+        android:layout_below="@+id/TextBroadcast"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="20dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:backgroundTint="@color/black"
+                android:outlineProvider="none"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/ImageBroadcast1"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:src="@drawable/download"
+                        android:layout_marginBottom="10dp"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <TextView
+                        android:id="@+id/TextBroadcast1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prambors 102.2"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="12dp"
+                        />
+                    <TextView
+                        android:id="@+id/TextBroadcast2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From Tuneln"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter_extralight"
+                        android:textSize="12dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/ImageBroadcast3"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:src="@drawable/download"
+                        android:layout_marginBottom="10dp"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <TextView
+                        android:id="@+id/TextBroadcast4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prambors 102.2"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="12dp"
+                        />
+                    <TextView
+                        android:id="@+id/TextBroadcast3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From Tuneln"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/inter_extralight"
+                        android:textSize="12dp"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+</RelativeLayout>

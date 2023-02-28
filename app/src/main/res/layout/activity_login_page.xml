@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:background="@color/black"
+    >
+
+    <ImageView
+        android:id="@+id/Iconlogin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/apple_icon"
+        />
+
+    <TextView
+        android:id="@+id/TextLogin"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Apple Music"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:fontFamily="@font/inter_semibold"
+        android:layout_below="@id/Iconlogin"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/TextLogin"
+        android:layout_marginTop="30dp"
+
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/LoginGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:cornerRadius="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
+            android:text="Login With Google"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/google"
+            android:textSize="12dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/LoginApple"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:cornerRadius="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Login With Apple"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/inter_semibold"
+            android:drawableLeft="@drawable/apple_black"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_extralight"
+            android:text="Sign In Without Account?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

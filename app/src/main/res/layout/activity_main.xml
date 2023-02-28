@@ -27,34 +27,34 @@
 
         >
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/TextListen"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
             android:fontFamily="@font/inter_bold"
             android:text="Listen Now"
             android:textColor="@color/white"
             android:textSize="36dp"
             android:textStyle="bold"
-            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/usermerah"
              />
 
-        <ImageView
-            android:id="@+id/Image_person"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="150dp"
-            android:src="@drawable/usermerah" />
+
 
     </LinearLayout>
 
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
         android:layout_below="@+id/Layout1"
-        android:layout_marginTop="-132dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:src="@drawable/free" />
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/free"
+
+
+         />
     </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
 </RelativeLayout>
