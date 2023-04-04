@@ -13,6 +13,20 @@
         android:theme="@style/Theme.Music_player_api"
         tools:targetApi="31">
         <activity
+            android:name=".ListLaguActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DetailLaguActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".RadioActivity"
             android:exported="false">
             <meta-data

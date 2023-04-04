@@ -24,7 +24,6 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:orientation="horizontal"
-
         >
         <TextView
             android:id="@+id/TextListen"
@@ -38,13 +37,11 @@
             android:gravity="center_vertical"
             android:drawableEnd="@drawable/usermerah"
              />
-
-
-
     </LinearLayout>
 
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/Image_tryfree"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:layout_below="@+id/Layout1"
@@ -56,6 +53,194 @@
         app:shapeAppearanceOverlay="@style/RoundedSquare"
          />
 
+        <LinearLayout
+            android:id="@+id/Layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/Image_tryfree"
+            >
+            <TextView
+                android:id="@+id/TextPlaylist"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="For You"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/HorizontalBroadcaster"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/Layout2"
+            android:layout_marginLeft="20dp">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black">
+
+                    <ImageView
+                        android:layout_width="20mm"
+                        android:layout_height="20mm"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/recently_played" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20mm"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Recently Played"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23mm"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Apple Music Recently Played"
+                        android:textColor="#877F7F"
+                        android:textSize="10dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="@color/black">
+
+                    <ImageView
+                        android:layout_width="136dp"
+                        android:layout_height="132dp"
+                        android:src="@drawable/rock_60s" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20mm"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Rock 60's"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23mm"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Apple Music Rock 60's"
+                        android:textColor="@color/gray"
+                        android:textSize="10dp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="@color/black">
+
+                    <ImageView
+                        android:layout_width="128dp"
+                        android:layout_height="20mm"
+                        android:src="@drawable/oasis" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20mm"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Britpop Is Oasis"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23mm"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Apple Music Oasis"
+                        android:textColor="@color/gray"
+                        android:textSize="10dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:backgroundTint="@color/black"
+                    app:contentPaddingRight="20dp">
+
+                    <ImageView
+                        android:layout_width="20mm"
+                        android:layout_height="20mm"
+                        android:src="@drawable/slipknot" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20mm"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Metal For Kids"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23mm"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Apple Music Slipknot"
+                        android:textColor="@color/gray"
+                        android:textSize="10dp" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/Layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/HorizontalBroadcaster"
+            >
+            <TextView
+                android:id="@+id/TextRadio"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Radio"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
     </RelativeLayout>
+
     </androidx.core.widget.NestedScrollView>
 </RelativeLayout>
