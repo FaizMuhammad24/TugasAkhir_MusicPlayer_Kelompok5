@@ -403,7 +403,7 @@
                                 android:fontFamily="@font/inter_medium"
 
                                 android:text="Dept, Ashley Alisha"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="@color/gray"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -455,7 +455,7 @@
                                 android:fontFamily="@font/inter_medium"
 
                                 android:text="The 1975"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="@color/gray"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -507,7 +507,7 @@
                                 android:fontFamily="@font/inter_medium"
 
                                 android:text="keshi"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="@color/gray"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -569,7 +569,7 @@
                                 android:fontFamily="@font/inter_medium"
 
                                 android:text="d4vd"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="@color/gray"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -621,7 +621,7 @@
                                 android:fontFamily="@font/inter_medium"
 
                                 android:text="The 1975"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="@color/gray"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -673,7 +673,7 @@
                                 android:fontFamily="@font/inter_medium"
 
                                 android:text="Yayyoung"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="@color/gray"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -735,7 +735,7 @@
                                 android:fontFamily="@font/inter_medium"
 
                                 android:text="Super Girlies"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="@color/gray"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -787,7 +787,7 @@
                                 android:fontFamily="@font/inter_medium"
 
                                 android:text="The Penninsula"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="@color/gray"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -838,7 +838,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter_medium"
                                 android:text="Jogja Hip Hop Foundation"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="@color/gray"
                                 android:textSize="13dp" />
                         </LinearLayout>
                     </LinearLayout>
